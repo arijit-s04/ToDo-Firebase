@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noComment">No Comments</string>
+    <string name="noTask">No Tasks</string>
+    <string name="allTask">All Tasks</string>
+    <string name="addTodo">Add Task</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="pass_info">Password must contain atleast 8 characters</string>
+    <string name="title_activity_splashscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

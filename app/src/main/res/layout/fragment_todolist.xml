@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".TodolistFragment">
+
+    <TextView
+        android:id="@+id/tv_todo_list_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="@string/allTask"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageButton
+        android:id="@+id/ib_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_circular"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:tooltipText="More options"
+        app:layout_constraintBottom_toBottomOf="@id/tv_todo_list_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/tv_todo_list_header"
+        app:layout_constraintTop_toTopOf="@+id/tv_todo_list_header" />
+
+    <ImageButton
+        android:id="@+id/ib_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_circular"
+        android:src="@drawable/ic_baseline_sync_24"
+        android:tooltipText="Toggle Sync"
+        app:layout_constraintBottom_toBottomOf="@id/ib_more"
+        app:layout_constraintEnd_toStartOf="@id/ib_more"
+        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintStart_toEndOf="@id/tv_todo_list_header"
+        app:layout_constraintTop_toTopOf="@id/ib_more"
+        app:layout_constraintVertical_bias="0.0" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_todolist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_todo_list_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
